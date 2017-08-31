@@ -10,7 +10,7 @@ Vanilla TCN + ADAM | 0 | 30 | 0.751 | 0.754 | 0.878 | 6 | 0.3 | ADAM | 4299214 |
 
 
 
-### Wilmer Data image phase: convlen=8, sample_weighted=no, class_weighted=no
+### Wilmer Data real temporal phase: convlen=8, sample_weighted=no, class_weighted=no
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Depth | Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |:---: |
 ResTCN_adam | 0 | 30 | x | x | x | x | 6 | 0.5 | adam | 7657684 |  |
