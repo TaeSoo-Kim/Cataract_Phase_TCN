@@ -10,9 +10,13 @@ Vanilla TCN + ADAM | 0 | 30 | 0.751 | 0.754 | 0.878 | 6 | 0.3 | ADAM | 4299214 |
 
 
 
-### Wilmer Data real temporal phase: convlen=8, sample_weighted=no, class_weighted=no
+### Wilmer Data True length temporal phase: convlen=8
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Depth | Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |:---: |
-ResTCN_adam | 0 | 30 | x | x | x | x | 6 | 0.5 | adam | 7657684 |  |
-ResTCN_rms | 0 | 30 | x | x | x | x | 6 | 0.5 | rms | 9657685 |  |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | x | 6 | 0.0 | rms | 11721946 |  |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | x | 6 | 0.3 | rms | 11721893 |  |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | x | 6 | 0.5 | rms | 11721960 |  |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | x | 6 | 0.0 | rms | 11721972 |  |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | x | 6 | 0.3 | rms | 11721993 |  |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | x | 6 | 0.5 | rms | 11722007 |  |
 
