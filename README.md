@@ -12,7 +12,7 @@ Vanilla TCN + ADAM | 0 | 30 | 0.751 | 0.754 | 0.878 | 6 | 0.3 | ADAM | 4299214 |
 
 ### Wilmer Data True length temporal phase: convlen=8
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
----|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |:---: |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
 ResTCN_rms_L1 | 0 | 30 | 0.3464 | 2.0273 | 0.6728 | 0.0 | rms | 11721946 |  |
 ResTCN_rms_L1 | 0 | 30 | 0.4999 | 2.4585 | 0.6849 | 0.3 | rms | 11721893 |  |
 ResTCN_rms_L1 | 0 | 30 | 0.5912 | 2.4802 | 0.6781 | 0.5 | rms | 11721960 |  |
