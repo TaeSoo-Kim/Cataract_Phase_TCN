@@ -26,3 +26,40 @@ ResTCN_adam_L2 | 0 | 30 | 0.4116 | 2.0378 | 0.6783 |  0.0 | adam | 11926746 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.6246 | 1.9463 | 0.6652 |  0.3 | adam | 11928035 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.2697 | 2.2966 | 0.6539 | 0.5 | adam | 11928707 |  |
 
+
+### Wilmer Data Raw Snippets
+Model | Augment | snippet length | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_adam_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13183362 | ALL DIDNT CONVERGE  |
+ResTCN_rms_L2 | 0 | 32 | x | x | x | 0.0 | rms | 13183375 |  |
+ResTCN_sgd_L2 | 0 | 32 | x | x | x | 0.0 | sgd | 13183506 |  |
+ResTCN_adam_big_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13189775 |  |
+
+
+
+### 2D phase, feature extractor
+Model | Augment | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+
+TKNET | 0 | x | x | 0.551 | 0.0 | sgd | local |  
+TKNET_cat | 0 | x | x | x | 0.0 | sgd | local |
+
+
+### JIGSAWS, kinematic regression
+Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_regression | 8 | x | x | x | 0.3 | adam | 13788075 |  
+ResTCN_regression | 16 | x | x | x | 0.3 | adam | 13788092 |  
+ResTCN_regression | 32 | x | x | x | 0.3 | adam | 13788093 |
+ResTCN_regression | 8 | x | x | x | 0.3 | sgd | 13788104 |  
+ResTCN_regression | 16 | x | x | x | 0.3 | sgd | 13788107 |  
+ResTCN_regression | 32 | x | x | x | 0.3 | sgd | 13788110 |
+
+### JIGSAWS, kinematic regression
+Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_classification | 8 | 0.5227 | 0.4784 | 1.0000 | 0.3 | adam | local | split=1
+
+
+
+
