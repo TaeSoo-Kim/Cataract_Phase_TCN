@@ -38,11 +38,12 @@ ResTCN_adam_big_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13189775 |  |
 
 
 ### 2D phase, feature extractor
-Model | Augment | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
----|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
 
-TKNET | 0 | x | x | 0.551 | 0.0 | sgd | local |  
-TKNET_cat | 0 | x | x | x | 0.0 | sgd | local |
+TKNET | x | x | 0.5510 | 0.3 | sgd | local |  |  
+TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  |  
+
 
 
 ### JIGSAWS, kinematic regression
