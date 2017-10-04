@@ -55,10 +55,27 @@ ResTCN_regression | 8 | x | x | x | 0.3 | sgd | 13788104 |
 ResTCN_regression | 16 | x | x | x | 0.3 | sgd | 13788107 |  
 ResTCN_regression | 32 | x | x | x | 0.3 | sgd | 13788110 |
 
-### JIGSAWS, kinematic regression
+### JIGSAWS, kinematic, classification, (E,I,N), LOSO
 Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
-ResTCN_classification | 8 | 0.5227 | 0.4784 | 1.0000 | 0.3 | adam | local | split=1
+ResTCN_classification | 8 | 0.4743 | 0.6479 | 0.8750 | 0.3 | adam | local | split=1
+ResTCN_classification | 8 | 1.1012 | 1.3079 | 0.6250 | 0.3 | adam | local | split=2
+ResTCN_classification | 8 | 1.1282 | 5.6738 | 0.6250 | 0.3 | adam | local | split=3
+ResTCN_classification | 8 | 0.9438 | 1.5444 | 0.7500 | 0.3 | adam | local | split=4
+ResTCN_classification | 8 | 0.5153 | 0.7974 | 0.8750 | 0.3 | adam | local | split=5
+
+
+### JIGSAWS, kinematic, classification, (E,I,N), LOUO
+Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_classification | 8 | 0.9522 | 1.0146 | 0.8750 | 0.3 | adam | local | split=1
+ResTCN_classification | 8 | 0.4416 | 0.5868 | 0.8750 | 0.3 | adam | local | split=2
+ResTCN_classification | 8 | 1.1883 | 2.0241 | 0.8750 | 0.3 | adam | local | split=3
+ResTCN_classification | 8 | 0.2622 | 0.5299 | 1.0000 | 0.3 | adam | local | split=4
+ResTCN_classification | 8 | 1.0577 | 0.6280 | 0.8750 | 0.3 | adam | local | split=5
+ResTCN_classification | 8 | 1.0970 | 2.1066 | 0.7500 | 0.3 | adam | local | split=6
+ResTCN_classification | 8 | 0.6446 | 0.8367 | 0.7500 | 0.3 | adam | local | split=7
+ResTCN_classification | 8 | 0.9186 | 0.9801 | 0.7500 | 0.3 | adam | local | split=8
 
 
 
