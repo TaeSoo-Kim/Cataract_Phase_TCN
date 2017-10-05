@@ -39,22 +39,10 @@ ResTCN_adam_big_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13189775 |  |
 
 ### 2D phase, feature extractor
 Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
----|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+TKNET | x | x | 0.5510 | 0.3 | sgd | local |   
+TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  
 
-TKNET | x | x | 0.5510 | 0.3 | sgd | local |  |  
-TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  |  
-
-
-
-### JIGSAWS, kinematic regression
-Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
----|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
-ResTCN_regression | 8 | x | x | x | 0.3 | adam | 13788075 |  
-ResTCN_regression | 16 | x | x | x | 0.3 | adam | 13788092 |  
-ResTCN_regression | 32 | x | x | x | 0.3 | adam | 13788093 |
-ResTCN_regression | 8 | x | x | x | 0.3 | sgd | 13788104 |  
-ResTCN_regression | 16 | x | x | x | 0.3 | sgd | 13788107 |  
-ResTCN_regression | 32 | x | x | x | 0.3 | sgd | 13788110 |
 
 ### JIGSAWS, kinematic, classification, (E,I,N), LOSO
 Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
