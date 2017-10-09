@@ -1,16 +1,6 @@
 # Cataract_Phase_TCN
 
-### Wilmer Data image phase: convlen=8, sample_weighted=yes, class_weighted=yes
-Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Depth | Dropout | Opti | SLURM ID| Notes |
----|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |:---: |
-Vanilla TCN | 0 | 30 | 0.918 | 0.775 | 0.163 | 6 | 0.3 | SGD | 4299209 | test=051 |
-Vanilla TCN + RMS | 0 | 30 | 0.917 | 0.665 | 0.787 | 6 | 0.3 | RMS | 4299206 | test=051 | 
-Vanilla TCN + ADAM | 0 | 30 | 0.751 | 0.754 | 0.878 | 6 | 0.3 | ADAM | 4299214 | test=051 | 
-
-
-
-
-### Wilmer Data True length temporal phase: convlen=8, short clips only, few data errors
+### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=Resnet50,imgnet finetuned
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
 ResTCN_rms_L1 | 0 | 30 | 0.3464 | 2.0273 | 0.6728 | 0.0 | rms | 11721946 |  |
@@ -26,15 +16,29 @@ ResTCN_adam_L2 | 0 | 30 | 0.4116 | 2.0378 | 0.6783 |  0.0 | adam | 11926746 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.6246 | 1.9463 | 0.6652 |  0.3 | adam | 11928035 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.2697 | 2.2966 | 0.6539 | 0.5 | adam | 11928707 |  |
 
-
-### Wilmer Data Raw Snippets
-Model | Augment | snippet length | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=TKNET
+Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
-ResTCN_adam_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13183362 | ALL DIDNT CONVERGE  |
-ResTCN_rms_L2 | 0 | 32 | x | x | x | 0.0 | rms | 13183375 |  |
-ResTCN_sgd_L2 | 0 | 32 | x | x | x | 0.0 | sgd | 13183506 |  |
-ResTCN_adam_big_L2 | 0 | 32 | x | x | x | 0.0 | adam | 13189775 |  |
+ResTCN_adam_L1 | 0 | 30 | x | x | x | 0.3 | adam | 13913990 | feat_dim=256 |
+ResTCN_adam_L1 | 0 | 30 | x | x | x | 0.5 | adam | 13913981 | feat_dim=256 |
+ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.3 | adam | 13913985 | feat_dim=256 |
+ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.5 | adam | 13913987 | feat_dim=256 |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | 0.3 | rms | 13913995 | feat_dim=256 |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | 0.5 | rms | 13913996 | feat_dim=256 |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | 0.3 | rms | 13913997 | feat_dim=256 |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | 0.5 | rms | 13913999 | feat_dim=256 |
 
+### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=TKNET_concat
+Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_adam_L1 | 0 | 30 | x | x | x | 0.3 | adam | 13914077 | feat_dim=448 |
+ResTCN_adam_L1 | 0 | 30 | x | x | x | 0.5 | adam | 13914082 | feat_dim=448 |
+ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.3 | adam | 13914158 | feat_dim=448 |
+ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.5 | adam | 13914160 | feat_dim=448 |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | 0.3 | rms | 13914162 | feat_dim=448 |
+ResTCN_rms_L1 | 0 | 30 | x | x | x | 0.5 | rms | 13914163 | feat_dim=448 |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | 0.3 | rms | 13914166 | feat_dim=448 |
+ResTCN_rms_L2 | 0 | 30 | x | x | x | 0.5 | rms | 13914168 | feat_dim=448 |
 
 
 ### 2D phase, feature extractor
@@ -43,6 +47,7 @@ Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM
 TKNET | x | x | 0.5510 | 0.3 | sgd | local |   
 TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  
 
+# Cataract_Skill_TCN
 
 ### JIGSAWS, kinematic, classification, (E,I,N), LOSO
 Model | filter | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
