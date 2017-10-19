@@ -16,7 +16,7 @@ ResTCN_adam_L2 | 0 | 30 | 0.4116 | 2.0378 | 0.6783 |  0.0 | adam | 11926746 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.6246 | 1.9463 | 0.6652 |  0.3 | adam | 11928035 |  |
 ResTCN_adam_L2 | 0 | 30 | 0.2697 | 2.2966 | 0.6539 | 0.5 | adam | 11928707 |  |
 
-### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=TKNET
+### Wilmer Data True length temporal phase: convlen=8, feature=TKNET
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
 ResTCN_adam_L1 | 0 | 30 | 0.9423 | 0.8658 | 0.8505 | 0.3 | adam | 13913990 | feat_dim=256 |
@@ -28,7 +28,7 @@ ResTCN_rms_L1 | 0 | 30 | 0.4814 | 0.4695 | 0.9286 | 0.5 | rms | 13913996 | feat_
 ResTCN_rms_L2 | 0 | 30 | 0.1092 | 0.3710 | 0.9267 | 0.3 | rms | 13913997 | feat_dim=256 |
 ResTCN_rms_L2 | 0 | 30 | 0.3486 | 0.3070 | 0.9225 | 0.5 | rms | 13913999 | feat_dim=256 |
 
-### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=TKNET_concat
+### Wilmer Data True length temporal phase: convlen=8,  feature=TKNET_concat
 Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
 ResTCN_adam_L1 | 0 | 30 | 1.2785 | 1.2335 | 0.7753 | 0.3 | adam | 13914077 | feat_dim=448 |
@@ -41,10 +41,16 @@ ResTCN_rms_L2 | 0 | 30 | 0.1910 | 1.2644 | 0.7603 | 0.3 | rms | 13914166 | feat_
 ResTCN_rms_L2 | 0 | 30 | 0.9671 | 0.6331 | 0.8156 | 0.5 | rms | 13914168 | feat_dim=448, these are not done yet |
 
 
+### Wilmer Data True length temporal phase: convlen=8, short clips only, feature=UCF_FLOW_RAW
+Model | Augment | skip rate | Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
+---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: | :---:  |
+ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.5 | adam | 14296559 | feat_dim=4096 |
+
 ### 2D phase, feature extractor
 Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 TKNET | x | x | 0.5510 | 0.3 | sgd | local |   
+TKNET_CSP | x | x | 0.3260 | 0.3 | sgd | local | Correct Split  
 TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  
 
 # Cataract_Skill_TCN
