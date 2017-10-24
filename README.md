@@ -50,8 +50,12 @@ ResTCN_adam_L2 | 0 | 30 | x | x | x | 0.5 | adam | 14296559 | feat_dim=4096 |
 Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM ID| Notes |
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 TKNET | x | x | 0.5510 | 0.3 | sgd | local |   
-TKNET_CSP | x | x | 0.3260 | 0.3 | sgd | local | Correct Split  
 TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  
+ResNET_Pretrain_CSP | x | x | x | x | adam | 14443104 | PyTorch, Correct Split  
+ResNET_Pretrain_CSP | x | x | x | x | sgd | 14443101 | PyTorch, Correct Split  
+TKNET_CSP | x | x | x | x | adam | X | PyTorch, Correct Split  
+TKNET_CSP | x | x | x | x | sgd | X | PyTorch, Correct Split  
+
 
 # Cataract_Skill_TCN
 
