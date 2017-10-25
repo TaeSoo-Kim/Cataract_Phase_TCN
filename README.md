@@ -51,10 +51,11 @@ Model |  Training Loss | Testing Loss | Validation Acc |  Dropout | Opti | SLURM
 ---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 TKNET | x | x | 0.5510 | 0.3 | sgd | local |   
 TKNET_cat | x | x | 0.57 | 0.3 | sgd | local |  
-ResNET_Pretrain_CSP | x | x | x | x | adam | 14443104 | PyTorch, Correct Split  
-ResNET_Pretrain_CSP | x | x | x | x | sgd | 14443101 | PyTorch, Correct Split  
-TKNET_CSP | x | x | x | x | adam | X | PyTorch, Correct Split  
-TKNET_CSP | x | x | x | x | sgd | X | PyTorch, Correct Split  
+ResNET_Pretrain_CSP | 0.0026 | 0.0108 | 0.3387 | 0.0 | adam | 14443104 | PyTorch, Correct Split  
+ResNET_Pretrain_CSP | 0.0042 | 0.0083 | 0.3350 | 0.0 | sgd | 14443101 | PyTorch, Correct Split  
+TKNET_CSP | x | x | x | x | adam | 14450330 | PyTorch, Correct Split  
+TKNET_CSP | x | x | x | x | sgd | 14450318 | PyTorch, Correct Split  
+TwostreamTKNET_CSP | x | x | x | x | adam | 14457991 | PyTorch, Correct Split
 
 
 # Cataract_Skill_TCN
